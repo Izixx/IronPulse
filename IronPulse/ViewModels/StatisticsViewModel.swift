@@ -198,7 +198,6 @@ public struct StatisticsEngine {
 
     // MARK: - 2. Volume par Groupe Musculaire
     public static func computeMuscleVolume(from workouts: [Workout], filter: TimeFilter) -> [MuscleVolumeItem] {
-        let calendar = Calendar.current
         let filteredWorkouts: [Workout]
 
         if let startDate = filter.startDate {

@@ -21,7 +21,7 @@ public struct MuscleRecoveryView: View {
             // Bannière de recommandation immédiate
             let recommended = readinessItems.filter { $0.status == .priority || $0.status == .ready }
             if !recommended.isEmpty {
-                let muscleNames = recommended.prefix(3).map { $0.muscle.displayName }.joined(by: ", ")
+                let muscleNames = recommended.prefix(3).map { $0.muscle.displayName }.joined(separator: ", ")
                 HStack(spacing: 10) {
                     Image(systemName: "sparkles")
                         .foregroundColor(.yellow)

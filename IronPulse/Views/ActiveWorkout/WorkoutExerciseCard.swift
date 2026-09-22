@@ -57,7 +57,7 @@ public struct WorkoutExerciseCard: View {
                         .font(.caption2)
                         .foregroundColor(.orange)
 
-                    let summary = prev.map { "\($0.reps)×\($0.weightKg > 0 ? String(format: "%.1f", $0.weightKg) : "0")kg" }.joined(by: ", ")
+                    let summary = prev.map { "\($0.reps)×\($0.weightKg > 0 ? String(format: "%.1f", $0.weightKg) : "0")kg" }.joined(separator: ", ")
                     Text("Dernière fois: \(summary)")
                         .font(.caption)
                         .foregroundColor(.secondary)

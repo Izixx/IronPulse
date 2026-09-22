@@ -123,7 +123,7 @@ struct RoutineCardView: View {
                                 }
                             }
 
-                            Text(day.exerciseNames.joined(by: " • "))
+                            Text(day.exerciseNames.joined(separator: " • "))
                                 .font(.caption2)
                                 .foregroundColor(.secondary)
                                 .lineLimit(2)

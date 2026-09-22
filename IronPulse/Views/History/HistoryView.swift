@@ -24,44 +24,47 @@ public struct HistoryView: View {
 
     public var body: some View {
         NavigationStack {
-            Group {
-                if completedWorkouts.isEmpty {
-                    VStack(spacing: 12) {
-                        Image(systemName: "calendar.badge.clock")
-                            .font(.system(size: 64))
-                            .foregroundColor(.secondary.opacity(0.6))
-                        Text("Aucune séance dans l'historique")
-                            .font(.headline)
-                        Text("Vos séances terminées apparaîtront ici avec le détail de vos performances.")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 32)
+            mainContent
+                .navigationTitle("Historique")
+        }
+    }
+
+    @ViewBuilder
+    private var mainContent: some View {
+        if completedWorkouts.isEmpty {
+            VStack(spacing: 12) {
+                Image(systemName: "calendar.badge.clock")
+                    .font(.system(size: 64))
+                    .foregroundColor(.secondary.opacity(0.6))
+                Text("Aucune séance dans l'historique")
+                    .font(.headline)
+                Text("Vos séances terminées apparaîtront ici avec le détail de vos performances.")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 32)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        } else {
+            List {
+                ForEach(filteredWorkouts) { workout in
+                    NavigationLink(destination: WorkoutDetailView(workout: workout)) {
+                        WorkoutRowCard(workout: workout)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else {
-                    List {
-                        ForEach(filteredWorkouts) { workout in
-                            NavigationLink(destination: WorkoutDetailView(workout: workout)) {
-                                WorkoutRowCard(workout: workout)
-                            }
-                            .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
-                            .listRowSeparator(.hidden)
-                            .swipeActions(edge: .destructive) {
-                                Button(role: .destructive) {
-                                    modelContext.delete(workout)
-                                    try? modelContext.save()
-                                } label: {
-                                    Label("Supprimer", systemImage: "trash")
-                                }
-                            }
+                    .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+                    .listRowSeparator(.hidden)
+                    .swipeActions(edge: .destructive) {
+                        Button(role: .destructive) {
+                            modelContext.delete(workout)
+                            try? modelContext.save()
+                        } label: {
+                            Label("Supprimer", systemImage: "trash")
                         }
                     }
-                    .listStyle(.plain)
-                    .searchable(text: $searchText, prompt: "Rechercher une séance ou un exercice...")
                 }
             }
-            .navigationTitle("Historique")
+            .listStyle(.plain)
+            .searchable(text: $searchText, prompt: "Rechercher une séance ou un exercice...")
         }
     }
 }

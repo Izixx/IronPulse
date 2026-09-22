@@ -263,7 +263,7 @@ public struct BackupService {
     // MARK: - Export CSV (Excel / Numbers)
     @MainActor
     public static func exportWorkoutsToCSV(modelContext: ModelContext) throws -> URL {
-        let workoutFetch = FetchDescriptor<Workout>(sortBy: [SortDescriptor(\.startDate, order: .ascending)])
+        let workoutFetch = FetchDescriptor<Workout>(sortBy: [SortDescriptor(\.startDate, order: .forward)])
         let workouts = try modelContext.fetch(workoutFetch)
 
         var csvString = "Date;Heure;Seance;Exercice;Muscles;Serie;Reps;PoidsKg;RPE;Echauffement;Valide;VolumeKg\n"
@@ -280,7 +280,7 @@ public struct BackupService {
 
             for we in w.exercises.sorted(by: { $0.order < $1.order }) {
                 let exName = we.exerciseName.replacingOccurrences(of: ";", with: " ")
-                let muscles = we.muscleGroups.map { $0.displayName }.joined(by: "/").replacingOccurrences(of: ";", with: " ")
+                let muscles = we.muscleGroups.map { $0.displayName }.joined(separator: "/").replacingOccurrences(of: ";", with: " ")
 
                 for s in we.sets.sorted(by: { $0.setNumber < $1.setNumber }) {
                     let rpeStr = s.rpe != nil ? String(format: "%.1f", s.rpe!) : ""

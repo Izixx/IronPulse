@@ -48,26 +48,28 @@ public final class HealthKitManager {
             return
         }
 
-        let energyQuantity: HKQuantity? = totalEnergyBurnedCalories.map {
-            HKQuantity(unit: .kilocalorie(), doubleValue: $0)
-        }
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .traditionalStrengthTraining
 
-        let workout = HKWorkout(
-            activityType: .traditionalStrengthTraining,
-            start: startDate,
-            end: endDate,
-            duration: endDate.timeIntervalSince(startDate),
-            totalEnergyBurned: energyQuantity,
-            totalDistance: nil,
-            device: nil,
-            metadata: [
-                HKMetadataKeyWorkoutBrandName: "IronPulse"
-            ]
-        )
+        let builder = HKWorkoutBuilder(healthStore: healthStore, configuration: configuration, device: .local())
 
-        healthStore.save(workout) { success, error in
-            DispatchQueue.main.async {
-                completion(success, error)
+        builder.beginCollection(withStart: startDate) { success, error in
+            guard success else {
+                DispatchQueue.main.async { completion(false, error) }
+                return
+            }
+
+            builder.endCollection(withEnd: endDate) { success, error in
+                guard success else {
+                    DispatchQueue.main.async { completion(false, error) }
+                    return
+                }
+
+                builder.finishWorkout { workout, error in
+                    DispatchQueue.main.async {
+                        completion(workout != nil, error)
+                    }
+                }
             }
         }
     }

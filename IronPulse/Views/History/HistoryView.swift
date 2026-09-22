@@ -53,7 +53,7 @@ public struct HistoryView: View {
                     }
                     .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
                     .listRowSeparator(.hidden)
-                    .swipeActions(edge: .destructive) {
+                    .swipeActions(edge: .trailing) {
                         Button(role: .destructive) {
                             modelContext.delete(workout)
                             try? modelContext.save()

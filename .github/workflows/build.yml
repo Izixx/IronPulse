@@ -1,0 +1,38 @@
+name: Build iOS IPA (IronPulse)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Génération du projet Xcode (XcodeGen)
+        run: |
+          which xcodegen || brew install xcodegen
+          xcodegen generate
+
+      - name: Build de l'application sans signature
+        run: |
+          xcodebuild -project IronPulse.xcodeproj -scheme IronPulse \
+            -sdk iphoneos -configuration Release \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
+            -derivedDataPath build clean build
+
+      - name: Création du fichier .ipa
+        run: |
+          mkdir Payload
+          cp -r build/Build/Products/Release-iphoneos/IronPulse.app Payload/
+          zip -r IronPulse.ipa Payload
+
+      - name: Téléversement de l'artefact IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: IronPulse-ipa
+          path: IronPulse.ipa
+          retention-days: 14

@@ -1,0 +1,14 @@
+# Xcode
+build/
+DerivedData/
+*.ipa
+Payload/
+*.xcuserstate
+xcuserdata/
+*.xcbkptlist
+
+# macOS
+.DS_Store
+
+# Sideloadly / Local
+*.log

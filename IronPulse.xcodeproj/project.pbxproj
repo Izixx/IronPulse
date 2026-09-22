@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0000100200000000000000 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100100000000000000 /* AppState.swift */; };
+		BF0000100400000000000000 /* IronPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100300000000000000 /* IronPulseApp.swift */; };
+		BF0000100600000000000000 /* BodyWeightEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100500000000000000 /* BodyWeightEntry.swift */; };
+		BF0000100800000000000000 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100700000000000000 /* Exercise.swift */; };
+		BF0000100A00000000000000 /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100900000000000000 /* ExerciseSet.swift */; };
+		BF0000100C00000000000000 /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100B00000000000000 /* MuscleGroup.swift */; };
+		BF0000100E00000000000000 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100D00000000000000 /* Routine.swift */; };
+		BF0000101000000000000000 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000100F00000000000000 /* Workout.swift */; };
+		BF0000101200000000000000 /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101100000000000000 /* WorkoutExercise.swift */; };
+		BF0000101400000000000000 /* BackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101300000000000000 /* BackupService.swift */; };
+		BF0000101600000000000000 /* ExerciseDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101500000000000000 /* ExerciseDataSeeder.swift */; };
+		BF0000101800000000000000 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101700000000000000 /* HealthKitManager.swift */; };
+		BF0000101A00000000000000 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101900000000000000 /* NotificationManager.swift */; };
+		BF0000101C00000000000000 /* RestTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101B00000000000000 /* RestTimerViewModel.swift */; };
+		BF0000101E00000000000000 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101D00000000000000 /* StatisticsViewModel.swift */; };
+		BF0000102000000000000000 /* ActiveWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000101F00000000000000 /* ActiveWorkoutView.swift */; };
+		BF0000102200000000000000 /* ExercisePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102100000000000000 /* ExercisePickerSheet.swift */; };
+		BF0000102400000000000000 /* RestTimerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102300000000000000 /* RestTimerOverlay.swift */; };
+		BF0000102600000000000000 /* WorkoutExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102500000000000000 /* WorkoutExerciseCard.swift */; };
+		BF0000102800000000000000 /* WorkoutSummarySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102700000000000000 /* WorkoutSummarySheet.swift */; };
+		BF0000102A00000000000000 /* BigActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102900000000000000 /* BigActionButton.swift */; };
+		BF0000102C00000000000000 /* RPEPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102B00000000000000 /* RPEPickerView.swift */; };
+		BF0000102E00000000000000 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102D00000000000000 /* StatCard.swift */; };
+		BF0000103000000000000000 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000102F00000000000000 /* DashboardView.swift */; };
+		BF0000103200000000000000 /* ExerciseProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103100000000000000 /* ExerciseProgressView.swift */; };
+		BF0000103400000000000000 /* HeatmapCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103300000000000000 /* HeatmapCalendarView.swift */; };
+		BF0000103600000000000000 /* MuscleRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103500000000000000 /* MuscleRecoveryView.swift */; };
+		BF0000103800000000000000 /* MuscleVolumeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103700000000000000 /* MuscleVolumeChartView.swift */; };
+		BF0000103A00000000000000 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103900000000000000 /* HistoryView.swift */; };
+		BF0000103C00000000000000 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103B00000000000000 /* WorkoutDetailView.swift */; };
+		BF0000103E00000000000000 /* AddExerciseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103D00000000000000 /* AddExerciseSheet.swift */; };
+		BF0000104000000000000000 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000103F00000000000000 /* ExerciseDetailView.swift */; };
+		BF0000104200000000000000 /* ExerciseLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000104100000000000000 /* ExerciseLibraryView.swift */; };
+		BF0000104400000000000000 /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000104300000000000000 /* RoutinesView.swift */; };
+		BF0000104600000000000000 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000104500000000000000 /* MainTabView.swift */; };
+		BF0000104800000000000000 /* BodyWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000104700000000000000 /* BodyWeightView.swift */; };
+		BF0000104A00000000000000 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000104900000000000000 /* SettingsView.swift */; };
+		BF0000104C00000000000000 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = FR0000104B00000000000000 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FR0000100100000000000000 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppState.swift"; path = "IronPulse/App/AppState.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100300000000000000 /* IronPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IronPulseApp.swift"; path = "IronPulse/App/IronPulseApp.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100500000000000000 /* BodyWeightEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BodyWeightEntry.swift"; path = "IronPulse/Models/BodyWeightEntry.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100700000000000000 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exercise.swift"; path = "IronPulse/Models/Exercise.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100900000000000000 /* ExerciseSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExerciseSet.swift"; path = "IronPulse/Models/ExerciseSet.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100B00000000000000 /* MuscleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MuscleGroup.swift"; path = "IronPulse/Models/MuscleGroup.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100D00000000000000 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Routine.swift"; path = "IronPulse/Models/Routine.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000100F00000000000000 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Workout.swift"; path = "IronPulse/Models/Workout.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101100000000000000 /* WorkoutExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WorkoutExercise.swift"; path = "IronPulse/Models/WorkoutExercise.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101300000000000000 /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BackupService.swift"; path = "IronPulse/Services/BackupService.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101500000000000000 /* ExerciseDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExerciseDataSeeder.swift"; path = "IronPulse/Services/ExerciseDataSeeder.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101700000000000000 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HealthKitManager.swift"; path = "IronPulse/Services/HealthKitManager.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101900000000000000 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NotificationManager.swift"; path = "IronPulse/Services/NotificationManager.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101B00000000000000 /* RestTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RestTimerViewModel.swift"; path = "IronPulse/ViewModels/RestTimerViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101D00000000000000 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatisticsViewModel.swift"; path = "IronPulse/ViewModels/StatisticsViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000101F00000000000000 /* ActiveWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ActiveWorkoutView.swift"; path = "IronPulse/Views/ActiveWorkout/ActiveWorkoutView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102100000000000000 /* ExercisePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExercisePickerSheet.swift"; path = "IronPulse/Views/ActiveWorkout/ExercisePickerSheet.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102300000000000000 /* RestTimerOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RestTimerOverlay.swift"; path = "IronPulse/Views/ActiveWorkout/RestTimerOverlay.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102500000000000000 /* WorkoutExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WorkoutExerciseCard.swift"; path = "IronPulse/Views/ActiveWorkout/WorkoutExerciseCard.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102700000000000000 /* WorkoutSummarySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WorkoutSummarySheet.swift"; path = "IronPulse/Views/ActiveWorkout/WorkoutSummarySheet.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102900000000000000 /* BigActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BigActionButton.swift"; path = "IronPulse/Views/Components/BigActionButton.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102B00000000000000 /* RPEPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RPEPickerView.swift"; path = "IronPulse/Views/Components/RPEPickerView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102D00000000000000 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatCard.swift"; path = "IronPulse/Views/Components/StatCard.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000102F00000000000000 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DashboardView.swift"; path = "IronPulse/Views/Dashboard/DashboardView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103100000000000000 /* ExerciseProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExerciseProgressView.swift"; path = "IronPulse/Views/Dashboard/ExerciseProgressView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103300000000000000 /* HeatmapCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HeatmapCalendarView.swift"; path = "IronPulse/Views/Dashboard/HeatmapCalendarView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103500000000000000 /* MuscleRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MuscleRecoveryView.swift"; path = "IronPulse/Views/Dashboard/MuscleRecoveryView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103700000000000000 /* MuscleVolumeChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MuscleVolumeChartView.swift"; path = "IronPulse/Views/Dashboard/MuscleVolumeChartView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103900000000000000 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HistoryView.swift"; path = "IronPulse/Views/History/HistoryView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103B00000000000000 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WorkoutDetailView.swift"; path = "IronPulse/Views/History/WorkoutDetailView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103D00000000000000 /* AddExerciseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AddExerciseSheet.swift"; path = "IronPulse/Views/Library/AddExerciseSheet.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000103F00000000000000 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExerciseDetailView.swift"; path = "IronPulse/Views/Library/ExerciseDetailView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000104100000000000000 /* ExerciseLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExerciseLibraryView.swift"; path = "IronPulse/Views/Library/ExerciseLibraryView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000104300000000000000 /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RoutinesView.swift"; path = "IronPulse/Views/Library/RoutinesView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000104500000000000000 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MainTabView.swift"; path = "IronPulse/Views/MainTabView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000104700000000000000 /* BodyWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BodyWeightView.swift"; path = "IronPulse/Views/Settings/BodyWeightView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000104900000000000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsView.swift"; path = "IronPulse/Views/Settings/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
+		FR0000104B00000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "IronPulse/Resources/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		FR0000104D00000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "IronPulse/Resources/Info.plist"; sourceTree = SOURCE_ROOT; };
+		PR0000104E00000000000000 /* IronPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IronPulse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FP0000105300000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GM0000105000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				FR0000100100000000000000,
+				FR0000100300000000000000,
+				FR0000100500000000000000,
+				FR0000100700000000000000,
+				FR0000100900000000000000,
+				FR0000100B00000000000000,
+				FR0000100D00000000000000,
+				FR0000100F00000000000000,
+				FR0000101100000000000000,
+				FR0000101300000000000000,
+				FR0000101500000000000000,
+				FR0000101700000000000000,
+				FR0000101900000000000000,
+				FR0000101B00000000000000,
+				FR0000101D00000000000000,
+				FR0000101F00000000000000,
+				FR0000102100000000000000,
+				FR0000102300000000000000,
+				FR0000102500000000000000,
+				FR0000102700000000000000,
+				FR0000102900000000000000,
+				FR0000102B00000000000000,
+				FR0000102D00000000000000,
+				FR0000102F00000000000000,
+				FR0000103100000000000000,
+				FR0000103300000000000000,
+				FR0000103500000000000000,
+				FR0000103700000000000000,
+				FR0000103900000000000000,
+				FR0000103B00000000000000,
+				FR0000103D00000000000000,
+				FR0000103F00000000000000,
+				FR0000104100000000000000,
+				FR0000104300000000000000,
+				FR0000104500000000000000,
+				FR0000104700000000000000,
+				FR0000104900000000000000,
+				FR0000104B00000000000000,
+				FR0000104D00000000000000,
+				GP0000104F00000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GP0000104F00000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PR0000104E00000000000000 /* IronPulse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		IronPulse /* IronPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CL0000105700000000000000 /* Build configuration list for PBXNativeTarget "IronPulse" */;
+			buildPhases = (
+				SP0000105100000000000000 /* Sources */,
+				FP0000105300000000000000 /* Frameworks */,
+				RP0000105200000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IronPulse;
+			productName = IronPulse;
+			productReference = PR0000104E00000000000000 /* IronPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PJ0000105400000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					IronPulse = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = PL0000105A00000000000000 /* Build configuration list for PBXProject "IronPulse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = GM0000105000000000000000;
+			productRefGroup = GP0000104F00000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				IronPulse /* IronPulse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RP0000105200000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0000104C00000000000000 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SP0000105100000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0000100200000000000000 /* in Sources */,
+				BF0000100400000000000000 /* in Sources */,
+				BF0000100600000000000000 /* in Sources */,
+				BF0000100800000000000000 /* in Sources */,
+				BF0000100A00000000000000 /* in Sources */,
+				BF0000100C00000000000000 /* in Sources */,
+				BF0000100E00000000000000 /* in Sources */,
+				BF0000101000000000000000 /* in Sources */,
+				BF0000101200000000000000 /* in Sources */,
+				BF0000101400000000000000 /* in Sources */,
+				BF0000101600000000000000 /* in Sources */,
+				BF0000101800000000000000 /* in Sources */,
+				BF0000101A00000000000000 /* in Sources */,
+				BF0000101C00000000000000 /* in Sources */,
+				BF0000101E00000000000000 /* in Sources */,
+				BF0000102000000000000000 /* in Sources */,
+				BF0000102200000000000000 /* in Sources */,
+				BF0000102400000000000000 /* in Sources */,
+				BF0000102600000000000000 /* in Sources */,
+				BF0000102800000000000000 /* in Sources */,
+				BF0000102A00000000000000 /* in Sources */,
+				BF0000102C00000000000000 /* in Sources */,
+				BF0000102E00000000000000 /* in Sources */,
+				BF0000103000000000000000 /* in Sources */,
+				BF0000103200000000000000 /* in Sources */,
+				BF0000103400000000000000 /* in Sources */,
+				BF0000103600000000000000 /* in Sources */,
+				BF0000103800000000000000 /* in Sources */,
+				BF0000103A00000000000000 /* in Sources */,
+				BF0000103C00000000000000 /* in Sources */,
+				BF0000103E00000000000000 /* in Sources */,
+				BF0000104000000000000000 /* in Sources */,
+				BF0000104200000000000000 /* in Sources */,
+				BF0000104400000000000000 /* in Sources */,
+				BF0000104600000000000000 /* in Sources */,
+				BF0000104800000000000000 /* in Sources */,
+				BF0000104A00000000000000 /* in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		PD0000105800000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		PR0000105900000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD0000105500000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IronPulse/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ironpulse.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		CR0000105600000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IronPulse/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ironpulse.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		PL0000105A00000000000000 /* Build configuration list for PBXProject "IronPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				PD0000105800000000000000 /* Debug */,
+				PR0000105900000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CL0000105700000000000000 /* Build configuration list for PBXNativeTarget "IronPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0000105500000000000000 /* Debug */,
+				CR0000105600000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = PJ0000105400000000000000 /* Project object */;
+}
